@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>The Velvet Storms</title>
   </head>
+
   <body>
     <!-- header -->
     <header class="primary-header">
+      <!-- Logo -->
+      <a class="logo" href="#"><img src="img/logo_cloud.png" alt="logo" /></a>
       <!-- navbar -->
-      <img id="logo" src="img/logo_cloud.png" alt="logo" />
-      <nav>
-        <ul>
+      <nav class="nav-header">
+        <ul class="nav-links">
           <li><a href="#">Hem</a></li>
           <li><a href="#">Turné</a></li>
           <li><a href="#">Kontakt</a></li>
@@ -21,6 +23,7 @@
       </nav>
     </header>
     <!-- main -->
+
     <main>
       <section>
         <!-- hero-content -->
@@ -32,18 +35,22 @@
         <!-- festival logos -->
         <section class="festival-logo" id="logo1">
           <h2>Hultsfred</h2>
+          <p>- 2014</p>
         </section>
         <section class="festival-logo" id="logo2">
           <h2>Emmaboda</h2>
+          <p>- 2018</p>
         </section>
         <section class="festival-logo" id="logo3">
           <h2>Sköna Gröna Grebo</h2>
+          - 2010
         </section>
         <section class="festival-logo" id="logo4">
           <h2>
             Festival <br />
             of the <br />Midnight sun
           </h2>
+          <p>- 2024</p>
         </section>
       </section>
 
@@ -54,39 +61,45 @@
       </section>
 
       <!-- reviews -->
-      <section>
+      <section class="reviews">
         <!-- review content -->
-        <article class="review" id="review1">
+        <div class="review" id="review1">
           <h2>Så jävla bra!</h2>
           <p>- Keybordistens farmor</p>
-        </article>
+        </div>
 
-        <article class="review" id="review2">
+        <div class="review" id="review2">
           <h2>Bästa bandet som spelat i Grebo!</h2>
           <p>- Basistens Mamma</p>
-        </article>
+        </div>
 
-        <article class="review" id="review3">
+        <div class="review" id="review3">
           <h2>Låter kanoners!</h2>
           <p>- Östgötacorrespondenten</p>
-        </article>
+        </div>
 
-        <article class="review" id="review4">
-          <h2>
-            Ett jäkla oväsen om nätterna <br />
-            men riktigt bra live!
-          </h2>
+        <div class="review" id="review4">
+          <h2>Ett jäkla oväsen om nätterna men riktigt bra live!</h2>
           <p>- Anonym granne ovanför replokalen</p>
-        </article>
+        </div>
       </section>
     </main>
 
     <!-- footer -->
     <footer>
-      <!-- footer content -->
       <!-- TODO: add copyright -->
       <!-- TODO: add nav -->
       <!-- TODO: add contact info -->
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Turné</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <a href="#primary-header"
+        ><img src="img/logo_full.png" alt="tvs-logotype"
+      /></a>
     </footer>
   </body>
 </html>

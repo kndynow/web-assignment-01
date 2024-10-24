@@ -1,0 +1,62 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(12, 11, 58);
+}
+
+body {
+  color: white;
+  height: 100vh;
+}
+
+/* link styling */
+a,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header styling */
+header {
+  padding-left: 10.4vw;
+  padding-right: 10.4vw;
+  border: 1px dashed red;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.logo {
+  margin-right: auto;
+  cursor: pointer;
+  border: 1px solid pink;
+}
+
+.logo img {
+  height: 75px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+/* Main */
+
+/* Festivals section */
+
+/* Reviews section */
+
+/* Footer */
+footer {
+  border: 1px solid lightblue;
+}
+footer img {
+  width: 96px;
+}
