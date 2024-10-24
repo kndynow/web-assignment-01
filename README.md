@@ -19,3 +19,43 @@
 ### Contact page
 
 ![alt text](mockup/contact-mockup.png)
+
+## Daily journal and planning
+
+### Thursday:
+
+TODO:
+
+- [ ] Setup basic website structure with HTML for homepage
+  - [ ] Header
+    - [ ] HTML
+      - [ ] Navbar with logo and menu links
+    - [ ] CSS
+      - [ ] Styling
+      - [ ] Layout Flex/Grid?
+  - [ ] Main
+  - [ ] HTML
+    - [ ] Images
+    - [ ] Content
+  - [ ] CSS
+    - [ ] Styling
+    - [ ] Layout Flex/Grid?
+  - [ ] Footer
+    - [ ] HTML
+      - [ ] Navbar
+      - [ ] Logo
+      - [ ] Contact
+      - [ ] Copyright
+    - [ ] CSS
+      - [ ] Styling
+      - [ ] Layout Flex/Grid?
+- [ ] Start implementing styling (flex/grid)
+
+### End of day thoughts:
+
+## Friday:
+
+### TODO:
+
+- [ ] Lecture on responsive layout
+- [ ] Review thursdays work
