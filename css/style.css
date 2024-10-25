@@ -114,23 +114,14 @@ header {
 /* Reviews section */
 
 /* Footer */
-footer {
+.nav-footer {
   border: 1px solid lightblue;
-}
-footer {
   padding-left: 10.4vw;
   padding-right: 10.4vw;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-
-footer .logo {
-  margin-right: auto;
-  cursor: pointer;
-  height: auto;
-}
-
-footer .nav-links li {
+.nav-footer .nav-links {
   font-size: 1.5rem;
 }
