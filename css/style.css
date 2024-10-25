@@ -51,28 +51,44 @@ a:visited {
 
 /* Header styling */
 header {
+  height: 56px;
+}
+.nav-header {
+  /* border: 1px dashed blue; */
   padding-left: 10.4vw;
   padding-right: 10.4vw;
-  /* border: 1px dashed red; */
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.logo {
-  margin-right: auto;
-  cursor: pointer;
-  height: auto;
-}
-
 .nav-links {
+  /* border: 1px dashed springgreen; */
   list-style: none;
 }
 
 .nav-links li {
+  /* border: 1px dashed red; */
   display: inline-block;
-  padding: 16px 32px;
-  font-size: 2.25rem;
+  margin-right: 16px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.nav-logo {
+  cursor: pointer;
+  /* border: 1px dashed darkorchid; */
+  height: 56px;
+  margin-right: auto;
+}
+
+.nav-button {
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 7px;
+  background-color: gray;
+  margin-left: auto;
+  border-radius: 5px;
 }
 
 /* Main */
@@ -106,7 +122,7 @@ footer {
   padding-right: 10.4vw;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 footer .logo {
@@ -116,6 +132,5 @@ footer .logo {
 }
 
 footer .nav-links li {
-  padding: 16px 32px;
   font-size: 1.5rem;
 }

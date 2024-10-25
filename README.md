@@ -65,6 +65,7 @@ Finish one task/thought before switching to fixing or implementing a new idea.
 TODO:
 
 - [ ] Setup HTML structure for home page (index.html)
+- [ ] Add booking-button in header
   - [ ] CSS
     - [ ] Styling
     - [ ] Layout Flex/Grid?
@@ -77,8 +78,16 @@ TODO:
   - [ ] Footer
     - [ ] HTML
       - [ ] Content
+        - [ ] Add booking button
         - [ ] Contact
         - [ ] Social Media Links
         - [ ] Copyright
     - [ ] CSS
       - [ ] Layout Flex/Grid?
+
+### End of day thoughts:
+
+Having problems with justifying logo to the left in header. When added as a list item it don't behave as I want to.
+
+Kind of like the way the navbar looks now. Just needs some small changes.
+Will focus on getting the footer now.
