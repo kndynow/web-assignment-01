@@ -72,7 +72,7 @@ header {
 
 /* ========================= Footer ======================== */
 .nav-footer {
-  margin-top: 2vh;
+  margin-top: 8px;
   margin-left: 10.4vw;
   margin-right: 10.4vw;
   margin-bottom: 8px;
@@ -212,23 +212,23 @@ header {
   background-image: url(/img/bg/picture3.webp);
   background-size: cover;
   height: 100vh;
-  font-size: 1.75rem;
-  color: white;
 }
 
 .tour-container {
   display: flex;
   flex-flow: column wrap;
-  height: 100vh;
+  /* justify-content: space-between; */
+  font-size: 1.5rem;
   margin-left: 10.4rem;
   margin-right: 10.4rem;
+  /* border: 2px dashed red; */
 }
 
 .tour-schedule {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
+  flex-flow: row wrap;
+  /* align-content: center; */
+  justify-content: center;
   margin-top: 16px;
   padding: 32px;
   border-radius: 10px;
@@ -243,17 +243,47 @@ header {
 
 .button {
   cursor: pointer;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   background-color: rgb(238, 62, 18);
+}
+
+.subscribe-form label {
+  font-size: 1.75rem;
+}
+
+.subscribe-form form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 32px;
+  border-radius: 10px;
+  backdrop-filter: blur(7px);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+input[type="email"] {
+  border: none;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 10px;
+  height: 32px;
+  width: 50%;
+}
+input[type="submit"] {
+  font-size: 1.5rem;
+  padding: 8px;
+  padding-inline: 32px;
+  color: white;
+  background-color: rgb(238, 62, 18);
+  border: none;
+  border-radius: 16px;
 }
 
 /* === Tour schedule - section === */
 
 /* === Mail section === */
-
-.mail-section {
-  background-color: #444;
-}
 
 /* ======================= Tour page end ======================= */
