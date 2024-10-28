@@ -64,11 +64,11 @@ Finish one task/thought before switching to fixing or implementing a new idea.
 
 TODO:
 
-- [ ] Setup HTML structure for home page (index.html)
-- [ ] Add booking-button in header
+- [x] Setup HTML structure for home page (index.html)
+- [x] Add booking-button in header
   - [ ] CSS
-    - [ ] Styling
-    - [ ] Layout Flex/Grid?
+    - [x] Styling
+    - [x] Layout Flex/Grid?
   - [ ] Main
     - [ ] HTML
       - [ ] Content
@@ -91,3 +91,32 @@ Having problems with justifying logo to the left in header. When added as a list
 
 Kind of like the way the navbar looks now. Just needs some small changes.
 Will focus on getting the footer now.
+
+## Sunday/Monday:
+
+TODO:
+
+- [x] Setup HTML structure for home page (index.html)
+- [x] Add booking-button in header
+  - [ ] CSS
+    - [x] Styling
+    - [x] Layout Flex/Grid?
+  - [ ] Main
+    - [ ] HTML
+      - [ ] Content
+    - [ ] CSS
+      - [ ] Styling
+      - [ ] Layout Flex/Grid?
+  - [x] Footer
+    - [x] HTML
+      - [x] Content
+        - [x] Add booking button
+        - [x] Contact
+        - [x] Social Media Links
+        - [x] Copyright
+    - [x] CSS
+      - [x] Layout Flex/Grid?
+
+### End of day thoughts:
+
+Managed to get a nice looking footer using flex. Have some trouble getting stuff aligned in center but I'll come back to that later.
