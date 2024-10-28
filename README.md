@@ -98,15 +98,15 @@ TODO:
 
 - [x] Setup HTML structure for home page (index.html)
 - [x] Add booking-button in header
-  - [ ] CSS
+  - [x] CSS
     - [x] Styling
     - [x] Layout Flex/Grid?
-  - [ ] Main
-    - [ ] HTML
-      - [ ] Content
-    - [ ] CSS
-      - [ ] Styling
-      - [ ] Layout Flex/Grid?
+  - [x] Main
+    - [x] HTML
+      - [x] Content
+    - [x] CSS
+      - [x] Styling
+      - [x] Layout Flex/Grid?
   - [x] Footer
     - [x] HTML
       - [x] Content
@@ -120,3 +120,7 @@ TODO:
 ### End of day thoughts:
 
 Managed to get a nice looking footer using flex. Have some trouble getting stuff aligned in center but I'll come back to that later.
+
+Now all the pages have their basic structure and styling. Next step is to implement better CSS for responsiveness. I initially thought I only need flexbox for this but I might try to switch things to grid to have more control over the layout for different devices.
+
+I'll probably just start to implement grid at the contact page for the contact form and then apply it for the rest of the webpages.
