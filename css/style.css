@@ -216,19 +216,16 @@ header {
 
 .tour-container {
   display: flex;
-  flex-flow: column wrap;
-  /* justify-content: space-between; */
+  flex-flow: column;
   font-size: 1.5rem;
   margin-left: 10.4rem;
   margin-right: 10.4rem;
-  /* border: 2px dashed red; */
 }
 
 .tour-schedule {
-  display: flex;
+  /* display: flex;
   flex-flow: row wrap;
-  /* align-content: center; */
-  justify-content: center;
+  justify-content: flex-start; */
   margin-top: 16px;
   padding: 32px;
   border-radius: 10px;
@@ -236,15 +233,27 @@ header {
   border: 1px solid rgb(255, 255, 255);
 }
 
-.tour-column {
-  padding: 16px;
+.tour-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
   background: rgba(45, 6, 138, 0.678);
+  margin-top: 8px;
+  margin-left: auto;
+  /* border: 1px dashed chartreuse; */
+}
+
+.tour-column {
+  padding: 8px;
+  padding-inline: 16px;
 }
 
 .button {
   cursor: pointer;
+  margin-left: auto;
   font-size: 1.2rem;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: rgb(238, 62, 18);
 }
 
