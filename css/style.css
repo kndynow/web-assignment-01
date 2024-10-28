@@ -33,7 +33,7 @@ body {
   font-size: 1rem;
 } */
 
-/* p .xs {
+/* .xs {
   font-size: 0.667rem;
 } */
 
@@ -96,7 +96,6 @@ header {
   background-color: #444;
   background-image: url(/img/bg/picture2.webp);
   background-size: cover;
-
   height: 100vh;
 }
 
@@ -111,7 +110,63 @@ header {
 
 /* Festivals section */
 
+.festival-section {
+  background-color: rgb(14, 26, 51);
+  border: 1px dashed rgb(0, 255, 85);
+}
+
+.festival-container {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 10.4vw;
+  margin-right: 10.4vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed blue;
+}
+
+.festival-logo {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 16px;
+  font-size: 1.5rem;
+  border: 1px dashed rgb(255, 0, 221);
+}
+
 /* Reviews section */
+.review-section {
+  background-color: rgb(25, 0, 58);
+  border: 1px dashed rgb(0, 255, 85);
+}
+
+.review-container {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  margin-left: 10.4vw;
+  margin-right: 10.4vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed blue;
+}
+
+.review {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 16px;
+  font-size: 1.25rem;
+  line-height: 200%;
+  border: 1px dashed rgb(255, 0, 221);
+}
+
+.review p {
+  font-size: 1rem;
+}
 
 /* Footer */
 .nav-footer {
