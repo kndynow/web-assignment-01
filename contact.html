@@ -29,49 +29,51 @@
         <div class="nav-button"><a href="#">Boka nu!</a></div>
       </nav>
     </header>
-    <!-- main -->
+    <!-- Main -->
 
     <main>
       <!-- contact section -->
       <section class="contact-section">
         <div class="contact-container">
-          <div class="subscribe-form contact">
-            <form action="#" method="post" id="contact-form">
-              <label for="contact-form">Boka The Velvet Storm! </label>
-              <label for="first-name">Förnamn</label>
-              <input type="text" name="first-name" id="first-name" />
-              <label for="last-name">Efternamn</label>
-              <input type="text" name="last-name" id="last-name" />
-
+          <h1>Kontakta oss för bokning!</h1>
+          <p>Eller om du har andra frågor!</p>
+          <form class="contact-form" action="#" method="post" id="contact-form">
+            <div class="form-group">
+              <label for="name">Namn</label>
+              <input type="text" name="name" id="name" />
+            </div>
+            <div class="form-group">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Email-adress..." />
-
-              <label for="phone">Telefon:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="form-group">
+              <lable for="phone">Telefon</lable>
               <input type="tel" name="phone" id="phone" />
-
-              <label for="date"></label>
+            </div>
+            <div class="form-group">
+              <lable for="date">Önskat Datum</lable>
               <input type="date" name="date" id="date" />
-
-              <input type="textbox" name="message" id="message-lable" />
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="8"
-                placeholder="Meddelande till bandet..."></textarea>
-
-              <input
-                type="submit"
-                id="submit"
-                name="submit"
-                value="Prenumerera" />
-            </form>
-          </div>
+            </div>
+            <div class="form-group form-group-full-width">
+              <lable for="message">Meddelande</lable>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="form-group">
+              <lable for="submit"></lable>
+              <input type="submit" name="submit" id="submit" value="Skicka" />
+            </div>
+            <!-- <label for="name">Ditt namn:</label> -->
+            <!-- <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Ditt namn..." />
+            <input
+              type="submit"
+              id="submit"
+              name="submit"
+              value="Prenumerera" /> -->
+          </form>
         </div>
       </section>
     </main>
