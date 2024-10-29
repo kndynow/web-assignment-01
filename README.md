@@ -124,3 +124,13 @@ Managed to get a nice looking footer using flex. Have some trouble getting stuff
 Now all the pages have their basic structure and styling. Next step is to implement better CSS for responsiveness. I initially thought I only need flexbox for this but I might try to switch things to grid to have more control over the layout for different devices.
 
 I'll probably just start to implement grid at the contact page for the contact form and then apply it for the rest of the webpages.
+
+## Tuesday:
+
+Plans for day:
+
+Pick up on last days work and finish the contact form. I want to use grids for the contact form layout. If that goes as planned I'll want to implement grids for the rest of the websites layout since it feels like it'll be easier to control when testing for smaller screens and different media queries.
+
+I also want to make the code cleaner. I've started to organize the style.css for better readability, although it feels that I could make both HTML and CSS cleaner with fewer classes.
+
+### End of day thoughts:
