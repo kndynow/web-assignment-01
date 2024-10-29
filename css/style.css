@@ -1,7 +1,9 @@
 /* global styling */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
 
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,9 +14,6 @@
 
 body {
   background: #00091a;
-}
-
-body {
   color: white;
   height: 100vh;
 }
@@ -304,13 +303,35 @@ input[type="submit"] {
 
 .contact-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 1.5rem;
-  margin-left: 10.4rem;
-  margin-right: 10.4rem;
-  backdrop-filter: blur(7px);
-  gap: 25px;
+  justify-content: center;
+  justify-items: center;
+  padding: 2rem;
+  max-width: min-content;
+  min-width: max-content;
+  backdrop-filter: blur(10px);
   border: 1px solid rgb(255, 255, 255);
 }
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  border-radius: 10px;
+}
 
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-group-full-width {
+  grid-column: 1/-1;
+}
+
+.form-header {
+  text-align: center;
+}
+
+.submit-button {
+  justify-self: center;
+}
 /* ======================= Contact page end ======================= */
