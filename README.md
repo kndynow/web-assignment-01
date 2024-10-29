@@ -133,4 +133,11 @@ Pick up on last days work and finish the contact form. I want to use grids for t
 
 I also want to make the code cleaner. I've started to organize the style.css for better readability, although it feels that I could make both HTML and CSS cleaner with fewer classes.
 
+### Update:
+
+Managed to write a contact form by using grid for layout.
+I've noticed that when changing viewport size the flex I've set up is kind of broken for all parts of the webpage so I'll branch of and try to refractor all the flex into a grid system and while working on that clean up both HTML and CSS which is a horrible mess right now.
+
+Whish me luck!
+
 ### End of day thoughts:
