@@ -1,10 +1,20 @@
 /* global styling */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap");
 
-*,
-::before,
-::after {
+* {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* set default margin and padding to 0 and set font family */
+html {
   margin: 0;
   padding: 0;
   font-family: "Crimson Text", Times, serif;
@@ -15,7 +25,6 @@
 body {
   background: #00091a;
   color: white;
-  height: 100vh;
 }
 
 /* link styling */
@@ -26,96 +35,69 @@ a:visited {
 }
 
 /* ======================= Header ======================= */
-header {
-  height: 56px;
-}
+
 .nav-header {
-  /* border: 1px dashed blue; */
-  padding-left: 10.4vw;
-  padding-right: 10.4vw;
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: space-between;
+  align-content: center;
+  border: 1px dashed orange;
+  witdh: 100%;
+}
+
+.nav-item {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-}
+  flex-flow: row wrap;
 
-.nav-links {
-  /* border: 1px dashed springgreen; */
   list-style: none;
-}
-
-.nav-links li {
-  /* border: 1px dashed red; */
-  display: inline-block;
-  margin-right: 16px;
   font-size: 1.2rem;
   font-weight: 400;
 }
-.nav-logo {
-  cursor: pointer;
-  /* border: 1px dashed darkorchid; */
-  height: 56px;
-  margin-right: auto;
+
+.nav-item li {
+  padding-inline: 20px;
 }
 
-.nav-button {
-  font-size: 1.2rem;
-  font-weight: 700;
+.nav-item {
   cursor: pointer;
-  padding: 7px;
-  background-color: gray;
-  margin-left: auto;
-  border-radius: 5px;
 }
 
 /* ======================= Header end ====================== */
 
 /* ========================= Footer ======================== */
 .nav-footer {
-  margin-top: 8px;
-  margin-left: 10.4vw;
-  margin-right: 10.4vw;
-  margin-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-  /* border: 1px dashed blue; */
-}
-
-.nav-list {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-auto-flow: column;
   align-items: center;
-  /* border: 1px dashed rgb(0, 255, 85); */
+  justify-items: center;
 }
 
-.nav-list a {
+.nav-item {
   font-size: 2rem;
 }
-
-/* .nav-item {
-  border: 1px dashed gold;
-} */
 
 .footer-bottom-container {
   display: flex;
   flex-direction: column;
-  /* border: 1px dashed rgb(255, 0, 221); */
+  justify-content: center;
+  align-items: center;
 }
 
 .social-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  /* border: 1px dashed rgb(127, 182, 255); */
 }
 
 .social-container a img {
-  /* border: 1px dashed gold; */
-  height: 32px;
+  padding-inline: 16px;
+  max-height: 32px;
 }
 
 .copyright {
   align-self: center;
-  /* border: 1px dashed rgb(255, 0, 221); */
 }
 /* ======================= Footer end ====================== */
 
@@ -126,7 +108,6 @@ header {
   background-color: #444;
   background-image: url(/img/bg/picture2.webp);
   background-size: cover;
-  height: 100vh;
 }
 
 /* === CTA section === */
@@ -134,8 +115,6 @@ header {
   background-color: #444;
   background-image: url(/img/bg/picture1.webp);
   background-size: cover;
-  height: 100vh;
-  padding: 1em;
   color: white;
 }
 
@@ -143,26 +122,19 @@ header {
 
 .festival-section {
   background-color: rgb(14, 26, 51);
-  /* border: 1px dashed rgb(0, 255, 85); */
 }
 
 .festival-container {
-  margin-left: 10.4vw;
-  margin-right: 10.4vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  /* border: 1px dashed blue; */
 }
 
 .festival-logo {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 16px;
-  font-size: 1.5rem;
-  /* border: 1px dashed rgb(255, 0, 221); */
 }
 
 /* === Festivals section end === */
@@ -171,28 +143,19 @@ header {
 
 .review-section {
   background-color: rgb(25, 0, 58);
-  /* border: 1px dashed rgb(0, 255, 85); */
 }
 
 .review-container {
-  margin-bottom: 4vh;
-  margin-left: 10.4vw;
-  margin-right: 10.4vw;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  /* border: 1px dashed blue; */
 }
 
 .review {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 16px;
-  font-size: 1.25rem;
-  line-height: 200%;
-  /* border: 1px dashed rgb(255, 0, 221); */
 }
 
 .review p {
@@ -210,15 +173,12 @@ header {
   background-color: #3d3d3d;
   background-image: url(/img/bg/picture3.webp);
   background-size: cover;
-  height: 100vh;
 }
 
 .tour-container {
   display: flex;
   flex-flow: column;
   font-size: 1.5rem;
-  margin-left: 10.4rem;
-  margin-right: 10.4rem;
 }
 
 .tour-schedule {
@@ -237,7 +197,6 @@ header {
   background: rgba(45, 6, 138, 0.678);
   margin-top: 8px;
   margin-left: auto;
-  /* border: 1px dashed chartreuse; */
 }
 
 .tour-column {
@@ -270,14 +229,6 @@ header {
   border: 1px solid rgb(255, 255, 255);
 }
 
-/* input[type="email"] {
-  border: none;
-  padding: 16px;
-  margin: 16px;
-  border-radius: 10px;
-  height: 32px;
-  width: 50%;
-} */
 input[type="submit"] {
   font-size: 1.5rem;
   padding: 8px;
@@ -298,7 +249,6 @@ input[type="submit"] {
   background-color: #3d3d3d;
   background-image: url(/img/bg/picture4.webp);
   background-size: cover;
-  height: 100vh;
 }
 
 .contact-container {
@@ -335,3 +285,54 @@ input[type="submit"] {
   justify-self: center;
 }
 /* ======================= Contact page end ======================= */
+
+@media screen and (max-width: 430px) {
+  .nav-footer {
+    grid-auto-flow: row;
+    align-items: center;
+    justify-items: center;
+  }
+  .nav-header {
+    align-items: center;
+  }
+  .nav-item {
+    flex-direction: column;
+    font-size: 110%;
+    text-align: justify;
+  }
+  .nav-header > img {
+    width: 80%;
+    text-align: center;
+  }
+  .festival-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .festival-logo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    line-height: 0.1%;
+  }
+  .festival-logo h2,
+  p {
+    font-size: 160%;
+  }
+  .review-container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .review p {
+    line-height: 0.1%;
+  }
+  .review h2,
+  p {
+    font-size: 160%;
+    text-align: center;
+  }
+}
