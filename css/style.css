@@ -303,13 +303,16 @@ section {
 
 /* === Components buttons, fields etc. === */
 input[type="submit"] {
+  cursor: pointer;
+  font-family: "Crimson Text", Times, serif;
   font-size: 1.5rem;
-  padding: 8px;
-  padding-inline: 32px;
-  color: white;
-  background-color: rgb(238, 62, 18);
+
   border: none;
-  border-radius: 16px;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(238, 62, 18);
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 input[type="email"] {
@@ -325,10 +328,11 @@ button {
   cursor: pointer;
   font-family: "Crimson Text", Times, serif;
   font-size: 1.5rem;
-  border: none;
-  border-radius: 10px;
-  background-color: rgb(238, 62, 18);
+
   padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(238, 62, 18);
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 /* === Components buttons, fields etc. end === */
