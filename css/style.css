@@ -7,7 +7,8 @@
 
 h1,
 h2,
-p {
+p,
+td {
   text-shadow: 3px 1px 2px rgb(0, 0, 0);
 }
 
@@ -21,7 +22,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 /* set default margin and padding to 0 and set font family */
@@ -47,11 +48,10 @@ a:visited {
 
 section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
   margin-bottom: 16px;
-  /* flex-direction: column;
-  align-self: center;
-  align-items: center;
-  justify-content: center; */
 }
 
 /* ======================= Header ======================= */
@@ -61,7 +61,6 @@ section {
   grid-auto-flow: column;
   justify-items: space-between;
   align-content: center;
-  border: 1px dashed orange;
   width: 100%;
 }
 
@@ -134,13 +133,24 @@ section {
   background-attachment: fixed;
 }
 
-.hero-section h2 {
-  font-size: 2.5rem;
-  text-align: center;
+.hero-splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero-section img {
-  height: 42rem;
+.hero-splash img {
+  height: 32rem;
+  filter: drop-shadow(0px 1px 3px #000000);
+}
+
+.hero-reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 /* === CTA section === */
@@ -154,22 +164,27 @@ section {
   background-position: bottom;
   background-attachment: fixed;
 }
-/* .call-to-action {
-  background-color: #444;
-  background-image: url(/img/bg/picture1.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-} */
 
 /* === Reviews section === */
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.call-to-action-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .review-section {
   display: flex;
-  flex-flow: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  justify-self: center;
   gap: 8px;
   margin-bottom: 16px;
 }
@@ -183,15 +198,8 @@ section {
   backdrop-filter: blur(7px);
   border: 1.5px solid white;
   border-radius: 10px;
-  width: 95%;
-}
-
-.review h2 {
-  font-size: 250%;
-}
-
-.review p {
-  font-size: 150%;
+  max-width: fit-content;
+  min-width: min-content;
 }
 
 /* === Reviews section end === */
@@ -202,81 +210,48 @@ section {
 
 /* === Tour schedule - section === */
 .tour-section {
-  background-color: #3d3d3d;
+  background-color: #444;
   background-image: url(/img/bg/picture3.webp);
   background-size: cover;
-}
-
-.tour-container {
-  display: flex;
-  flex-flow: column;
-  font-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
 .tour-schedule {
-  margin-top: 16px;
-  padding: 32px;
-  border-radius: 10px;
-  backdrop-filter: blur(7px);
-  border: 1px solid rgb(255, 255, 255);
+  display: grid;
+  grid-auto-flow: row;
 }
 
 .tour-row {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
   align-items: center;
-  background: rgba(45, 6, 138, 0.678);
-  margin-top: 8px;
-  margin-left: auto;
-}
-
-.tour-column {
+  gap: 16px;
   padding: 8px;
-  padding-inline: 16px;
+  border: 1px solid white;
+  backdrop-filter: blur(7px);
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #4444447e;
+}
+.tour-row td {
+  font-size: 1.5rem;
 }
 
-.button {
-  cursor: pointer;
-  margin-left: auto;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  background-color: rgb(238, 62, 18);
-}
-
-/* === Subscription form === */
-.subscribe-form label {
-  font-size: 1.75rem;
-}
-
-.subscribe-form form {
+.subscribe-form {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
   align-items: center;
-  margin-top: 8px;
-  margin-bottom: 8px;
-  padding: 32px;
+  align-self: center;
+  gap: 16px;
+  padding: 16px;
+
   border-radius: 10px;
   backdrop-filter: blur(7px);
   border: 1px solid rgb(255, 255, 255);
-}
-/* === Components buttons, fields etc. === */
-input[type="submit"] {
-  font-size: 1.5rem;
-  padding: 8px;
-  padding-inline: 32px;
-  color: white;
-  background-color: rgb(238, 62, 18);
-  border: none;
-  border-radius: 16px;
-}
-
-button {
-  background-color: rgb(255, 127, 35);
-  border: none;
-  border-radius: 16px;
-  font-size: 1.5rem;
-  padding: 1.5rem;
+  width: fit-content;
+  margin-bottom: 16px;
 }
 
 /* === Tour schedule - section end === */
@@ -326,45 +301,73 @@ button {
 }
 /* ======================= Contact page end ======================= */
 
+/* === Components buttons, fields etc. === */
+input[type="submit"] {
+  font-size: 1.5rem;
+  padding: 8px;
+  padding-inline: 32px;
+  color: white;
+  background-color: rgb(238, 62, 18);
+  border: none;
+  border-radius: 16px;
+}
+
+input[type="email"] {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 1rem;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Crimson Text", Times, serif;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(238, 62, 18);
+  padding: 8px;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+/* === Components buttons, fields etc. end === */
+
+/* === Media queries === */
 @media screen and (max-width: 430px) {
   /* Navigation @ width 430px */
   .nav-footer {
     grid-auto-flow: row;
     align-items: center;
     justify-items: center;
+    font-size: 120%;
   }
   .nav-header {
     align-items: center;
   }
   .nav-item {
     flex-direction: column;
-    font-size: 110%;
-    text-align: justify;
+    font-size: 170%;
   }
   .nav-header > img {
     width: 80%;
-    text-align: center;
   }
-
+  /* generic sections @ width 430px */
   section {
     flex-direction: column;
     align-self: center;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-
     text-align: center;
   }
-
   /* hero-section @ width 430px */
-  /* .hero-section {
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-  } */
+  .hero-section h2 {
+    font-size: 20%;
+  }
+
   .hero-section p {
     font-size: 150%;
-    line-height: 0.5%;
+    line-height: 1.2;
   }
 
   .hero-section img {
@@ -374,8 +377,17 @@ button {
   }
 
   /* bio-section @ width 430px */
+  .bio-section p {
+    font-size: 140%;
+    text-align: center;
+    line-height: 1.4;
+  }
 
   /* Call-to-action @ width 430px */
+
+  .call-to-action-section {
+    flex-direction: column;
+  }
 
   /* review-section @ width 430px */
   .review-section {
@@ -386,7 +398,8 @@ button {
   .review {
     padding: 1rem;
     border-radius: 10px;
-    width: 95%;
+    max-width: 100%;
+    min-width: 100%;
   }
 
   .review h2 {
@@ -397,9 +410,13 @@ button {
     font-size: 150%;
   }
 
-  .bio-section p {
-    font-size: 140%;
-    text-align: center;
-    line-height: 1.4;
+  /* Tour-schedule @ 430px */
+  .tour-row {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 8px;
   }
 }
+/* === Media queries end === */

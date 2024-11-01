@@ -30,59 +30,59 @@
     </header>
     <main>
       <section class="tour-section">
-        <div class="tour-container">
-          <table class="tour-schedule">
-            <tr class="tour-row">
-              <td class="tour-column date">26/12/2024</td>
-              <td class="tour-column location">Platens Bar</td>
-              <td class="tour-column location">Linköping, Sverige</td>
-              <td class="tour-column button"><a href="#">Boka Biljett</a></td>
-            </tr>
-            <tr class="tour-row">
-              <td class="tour-column date">10/01/2025</td>
-              <td class="tour-column location">Kannan</td>
-              <td class="tour-column location">Lund, Sverige</td>
-              <td class="tour-column button"><a href="#">Boka Biljett</a></td>
-            </tr>
-            <tr class="tour-row">
-              <td class="tour-column date">15/01/2025</td>
-              <td class="tour-column location">Danskens Bar</td>
-              <td class="tour-column location">Göteborg, Sverige</td>
-              <td class="tour-column button"><a href="#">Boka Biljett</a></td>
-            </tr>
-            <tr class="tour-row">
-              <td class="tour-column date">13/02/2025</td>
-              <td class="tour-column location">Vaergang Bodega</td>
-              <td class="tour-column location">Köpenhamn, Danmark</td>
-              <td class="tour-column button"><a href="#">Boka Biljett</a></td>
-            </tr>
-            <tr class="tour-row">
-              <td class="tour-column date">20/02/2025</td>
-              <td class="tour-column location">Hest Pub</td>
-              <td class="tour-column location">Oslo, Norge</td>
-              <td class="tour-column button"><a href="#">Boka Biljett</a></td>
-            </tr>
-          </table>
-
-          <div class="subscribe-form">
-            <form action="#" method="post">
-              <label for="email"
-                >Håll dig uppdaterad med de senaste nyheterna!
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Email-adress..." />
-              <input
-                type="submit"
-                id="submit"
-                name="submit"
-                value="Prenumerera" />
-            </form>
-          </div>
-        </div>
+        <table class="tour-schedule">
+          <tr class="tour-row">
+            <td class="tour-column date">26/12/2024</td>
+            <td class="tour-column location">Platens Bar</td>
+            <td class="tour-column location">Linköping, Sverige</td>
+            <td class="tour-column">
+              <button><a href="#">Boka Biljett</a></button>
+            </td>
+          </tr>
+          <tr class="tour-row">
+            <td class="tour-column date">10/01/2025</td>
+            <td class="tour-column location">Kannan</td>
+            <td class="tour-column location">Lund, Sverige</td>
+            <td class="tour-column">
+              <button><a href="#">Boka Biljett</a></button>
+            </td>
+          </tr>
+          <tr class="tour-row">
+            <td class="tour-column date">15/01/2025</td>
+            <td class="tour-column location">Danskens Bar</td>
+            <td class="tour-column location">Göteborg, Sverige</td>
+            <td class="tour-column">
+              <button><a href="#">Boka Biljett</a></button>
+            </td>
+          </tr>
+          <tr class="tour-row">
+            <td class="tour-column date">13/02/2025</td>
+            <td class="tour-column location">Vaergang Bodega</td>
+            <td class="tour-column location">Köpenhamn, Danmark</td>
+            <td class="tour-column">
+              <button><a href="#">Boka Biljett</a></button>
+            </td>
+          </tr>
+          <tr class="tour-row">
+            <td class="tour-column date">20/02/2025</td>
+            <td class="tour-column location">Hest Pub</td>
+            <td class="tour-column location">Oslo, Norge</td>
+            <td class="tour-column">
+              <button><a href="#">Boka Biljett</a></button>
+            </td>
+          </tr>
+        </table>
+        <h2>Håll dig uppdaterad med de senaste nyheterna!</h2>
+        <form class="subscribe-form" method="post">
+          <label for="email" hidden>email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="Email-adress..." />
+          <input type="submit" id="submit" name="submit" value="Prenumerera" />
+        </form>
       </section>
     </main>
 
