@@ -45,6 +45,15 @@ a:visited {
   text-decoration: none;
 }
 
+section {
+  display: flex;
+  margin-bottom: 16px;
+  /* flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center; */
+}
+
 /* ======================= Header ======================= */
 
 .nav-header {
@@ -114,13 +123,6 @@ a:visited {
 
 /* ======================= Main page ======================= */
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-}
 /* === Hero section === */
 .hero-section {
   background-color: #444;
@@ -142,55 +144,54 @@ section {
 }
 
 /* === CTA section === */
-.call-to-action {
+
+.cta-section {
   background-color: #444;
   background-image: url(/img/bg/picture1.webp);
   background-size: cover;
-  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
-
-/* === Festivals section === */
-
-.festival-section {
-  background-color: rgb(14, 26, 51);
-}
-
-.festival-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.festival-logo {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-/* === Festivals section end === */
+/* .call-to-action {
+  background-color: #444;
+  background-image: url(/img/bg/picture1.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+} */
 
 /* === Reviews section === */
 
 .review-section {
-  background-color: rgb(25, 0, 58);
-}
-
-.review-container {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column;
   align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
 .review {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column;
+  justify-content: center;
   align-items: center;
+  padding: 1rem;
+  backdrop-filter: blur(7px);
+  border: 1.5px solid white;
+  border-radius: 10px;
+  width: 95%;
+}
+
+.review h2 {
+  font-size: 250%;
 }
 
 .review p {
-  font-size: 1rem;
+  font-size: 150%;
 }
 
 /* === Reviews section end === */
@@ -259,7 +260,7 @@ section {
   backdrop-filter: blur(7px);
   border: 1px solid rgb(255, 255, 255);
 }
-
+/* === Components buttons, fields etc. === */
 input[type="submit"] {
   font-size: 1.5rem;
   padding: 8px;
@@ -268,6 +269,14 @@ input[type="submit"] {
   background-color: rgb(238, 62, 18);
   border: none;
   border-radius: 16px;
+}
+
+button {
+  background-color: rgb(255, 127, 35);
+  border: none;
+  border-radius: 16px;
+  font-size: 1.5rem;
+  padding: 1.5rem;
 }
 
 /* === Tour schedule - section end === */
@@ -318,6 +327,7 @@ input[type="submit"] {
 /* ======================= Contact page end ======================= */
 
 @media screen and (max-width: 430px) {
+  /* Navigation @ width 430px */
   .nav-footer {
     grid-auto-flow: row;
     align-items: center;
@@ -336,53 +346,60 @@ input[type="submit"] {
     text-align: center;
   }
 
-  /* hero-section @ width 430px */
-  .hero-section {
+  section {
     flex-direction: column;
     align-self: center;
     align-items: center;
     justify-content: center;
+
+    text-align: center;
+  }
+
+  /* hero-section @ width 430px */
+  /* .hero-section {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  } */
+  .hero-section p {
+    font-size: 150%;
+    line-height: 0.5%;
   }
 
   .hero-section img {
     width: 100%;
     margin: 0;
-    paddin: 0;
+    padding: 0;
   }
 
-  /* festival-section @ width 420px */
-  .festival-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .festival-logo {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    line-height: 0.1%;
-  }
-  .festival-logo h2,
-  p {
-    font-size: 160%;
-  }
+  /* bio-section @ width 430px */
+
+  /* Call-to-action @ width 430px */
 
   /* review-section @ width 430px */
-  .review-container {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+  .review-section {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .review {
+    padding: 1rem;
+    border-radius: 10px;
+    width: 95%;
+  }
+
+  .review h2 {
+    font-size: 250%;
   }
 
   .review p {
-    line-height: 0.1%;
+    font-size: 150%;
   }
 
-  .review h2,
-  p {
-    font-size: 160%;
+  .bio-section p {
+    font-size: 140%;
     text-align: center;
+    line-height: 1.4;
   }
 }
