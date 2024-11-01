@@ -63,7 +63,7 @@ section {
 .nav-header {
   display: grid;
   grid-auto-flow: column;
-  justify-items: space-between;
+  justify-content: space-between;
   align-content: center;
   width: 100%;
 }
@@ -156,9 +156,6 @@ section {
   flex-flow: row wrap;
   gap: 8px;
   margin-bottom: 16px;
-}
-
-.bio-section {
 }
 
 /* === CTA section === */
@@ -412,6 +409,7 @@ button {
   padding: 8px;
   border-radius: 10px;
   border: none;
+  color: white;
   background-color: rgb(238, 62, 18);
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
