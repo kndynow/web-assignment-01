@@ -5,12 +5,23 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+p {
+  text-shadow: 3px 1px 2px rgb(0, 0, 0);
+}
+
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
 }
 
 /* set default margin and padding to 0 and set font family */
@@ -42,7 +53,7 @@ a:visited {
   justify-items: space-between;
   align-content: center;
   border: 1px dashed orange;
-  witdh: 100%;
+  width: 100%;
 }
 
 .nav-item {
@@ -103,11 +114,31 @@ a:visited {
 
 /* ======================= Main page ======================= */
 
+section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
 /* === Hero section === */
 .hero-section {
   background-color: #444;
   background-image: url(/img/bg/picture2.webp);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.hero-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.hero-section img {
+  height: 42rem;
 }
 
 /* === CTA section === */
@@ -304,6 +335,22 @@ input[type="submit"] {
     width: 80%;
     text-align: center;
   }
+
+  /* hero-section @ width 430px */
+  .hero-section {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero-section img {
+    width: 100%;
+    margin: 0;
+    paddin: 0;
+  }
+
+  /* festival-section @ width 420px */
   .festival-container {
     display: flex;
     flex-flow: column;
@@ -320,6 +367,8 @@ input[type="submit"] {
   p {
     font-size: 160%;
   }
+
+  /* review-section @ width 430px */
   .review-container {
     display: flex;
     flex-flow: column;
@@ -330,6 +379,7 @@ input[type="submit"] {
   .review p {
     line-height: 0.1%;
   }
+
   .review h2,
   p {
     font-size: 160%;
