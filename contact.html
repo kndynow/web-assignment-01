@@ -32,38 +32,53 @@
     <main>
       <!-- contact section -->
       <section class="contact-section">
-        <div class="contact-container">
+        <form class="contact-form" method="post" id="contact-form">
           <div class="form-group form-header">
-            <h1>Kontakta oss för bokning!</h1>
-            <p>Eller om du har andra frågor!</p>
+            <h2>Kontakta oss för bokning!</h2>
           </div>
-          <form class="contact-form" action="#" method="post" id="contact-form">
-            <div class="form-group">
-              <label for="name">Namn</label>
-              <input type="text" name="name" id="name" />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="form-group">
-              <lable for="phone">Telefon</lable>
-              <input type="tel" name="phone" id="phone" />
-            </div>
-            <div class="form-group">
-              <lable for="date">Önskat Datum</lable>
-              <input type="date" name="date" id="date" />
-            </div>
-            <div class="form-group form-group-full-width">
-              <lable for="message">Meddelande</lable>
-              <textarea name="message" id="message"></textarea>
-            </div>
-            <div class="form-group form-group-full-width submit-button">
-              <lable for="submit"></lable>
-              <input type="submit" name="submit" id="submit" value="Skicka" />
-            </div>
-          </form>
-        </div>
+          <div class="form-group">
+            <label for="name">Namn</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Ditt namn..." />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Din email..." />
+          </div>
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              required
+              placeholder="Ditt telefonnummer..." />
+          </div>
+          <div class="form-group">
+            <label for="date">Önskat Datum</label>
+            <input type="date" name="date" id="date" required />
+          </div>
+          <div class="form-group form-group-full-width">
+            <label for="message">Meddelande</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Ditt meddelande..."></textarea>
+          </div>
+          <div class="form-group form-group-full-width submit-button">
+            <label for="submit"></label>
+            <input type="submit" name="submit" id="submit" value="Skicka" />
+          </div>
+        </form>
       </section>
     </main>
 

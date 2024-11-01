@@ -46,6 +46,10 @@ a:visited {
   text-decoration: none;
 }
 
+label {
+  font-size: 1.5rem;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -261,28 +265,29 @@ section {
 /* ======================= Contact page ======================= */
 
 .contact-section {
-  background-color: #3d3d3d;
+  background-color: #444;
   background-image: url(/img/bg/picture4.webp);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
 }
 
-.contact-container {
-  display: grid;
-  justify-content: center;
-  justify-items: center;
-  padding: 2rem;
-  max-width: min-content;
-  min-width: max-content;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgb(255, 255, 255);
-}
 .contact-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  border-radius: 10px;
-}
+  gap: 1rem;
 
+  border-radius: 10px;
+  border: 1px solid white;
+  backdrop-filter: blur(7px);
+  padding: 16px;
+  margin: 32px;
+}
+.form-header {
+  grid-column: 1/-1;
+}
 .form-group {
   display: grid;
   gap: 0.5rem;
@@ -457,6 +462,13 @@ button {
     border: 1px solid white;
     border-radius: 10px;
     margin: 8px;
+  }
+  /* contact-page @ 430px */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    align-self: center;
   }
 }
 /* === Media queries end === */
