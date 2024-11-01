@@ -42,6 +42,8 @@
               type="text"
               name="name"
               id="name"
+              patter="[A-Za-z]"
+              title="Får bara innehålla bokstäver"
               required
               placeholder="Ditt namn..." />
           </div>
@@ -51,6 +53,8 @@
               type="email"
               name="email"
               id="email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              title="Måste innehålla en giltig mail-adress"
               required
               placeholder="Din email..." />
           </div>
@@ -60,6 +64,8 @@
               type="tel"
               name="phone"
               id="phone"
+              pattern="[0-9]{10}"
+              title="Måste innehålla ett giltigt telefonnummer. 10 siffror."
               required
               placeholder="Ditt telefonnummer..." />
           </div>
