@@ -128,6 +128,7 @@ section {
 
 /* === Hero section === */
 .hero-section {
+  min-height: 90vh;
   background-color: #444;
   background-image: url(/img/bg/picture2.webp);
   background-size: cover;
@@ -157,9 +158,13 @@ section {
   margin-bottom: 16px;
 }
 
+.bio-section {
+}
+
 /* === CTA section === */
 
 .cta-section {
+  min-height: 80vh;
   background-color: #444;
   background-image: url(/img/bg/picture1.webp);
   background-size: cover;
@@ -214,6 +219,7 @@ section {
 
 /* === Tour schedule - section === */
 .tour-section {
+  min-height: 100vh;
   background-color: #444;
   background-image: url(/img/bg/picture3.webp);
   background-size: cover;
@@ -262,9 +268,43 @@ section {
 
 /* ======================= Tour page end ======================= */
 
+/* ====================== Discography page ==================== */
+.discography-section {
+  min-height: 100vh;
+  background-color: #444;
+  background-image: url(/img/bg/picture4.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.album-card {
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.album-card img {
+  width: 100%;
+}
+
+.disco-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 16px;
+}
+
+/* ====================== Discography page ==================== */
+
 /* ======================= Contact page ======================= */
 
 .contact-section {
+  min-height: 100vh;
   background-color: #444;
   background-image: url(/img/bg/picture4.webp);
   background-size: cover;
