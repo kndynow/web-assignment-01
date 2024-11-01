@@ -1,28 +1,28 @@
-# A simple website for a made up local rockband called The Velvet Storm
+# En enkel hemsida till ett fiktivt lokalt rockband som heter "The Velvet Storm"
 
-## Pages included
+## Sidor som ska finnas
 
-- Home (main presentation)
-- Tour page (including tour schedule made with a table)
-- Bokningssida(including forms)
+- Hem (index)
+- Turné-sida som innehåller ett turné schema i from av en tabell
+- Bokningssida som inkluderar forms
 
-## Initial sketch/wireframe for page layouts:
+## Initial idé och sketch:
 
-### Home page
+### Hem (index)
 
 ![alt text](mockup/startsida-mockup.png)
 
-### Tour page
+### Turné-sida
 
 ![alt text](mockup/tour-mockup.png)
 
-### Contact page
+### Kontakt sida
 
 ![alt text](mockup/contact-mockup.png)
 
-## Daily journal and planning
+## "Dagbok" och planering
 
-### Thursday:
+### Torsdag:
 
 TODO:
 
@@ -50,17 +50,17 @@ TODO:
       - [x] Styling
       - [ ] Layout Flex/Grid?
 
-### End of day thoughts:
+### Reflektion slutet av dagen:
 
-Managed to get the basic html structure for the home page down. Still needs a lot of fix to do.
-At least I managed to get the header layout to work with flex and I think I'm finally understanding flex, kind of.
+Lyckades få ner den grundläggande html-strukturen för hemsidan. Behöver fortfarande en hel del fix att göra.
+Jag lyckades åtminstone få header-layouten att fungera med flex och jag tror att jag äntligen förstår flex, typ.
 
-I want to get the header and footer done before continuing with the rest of the content and the other two pages since these are consistent on all three. After that I'll focus on the festival-section and review-section of the home page cause they are pretty simple and I think I could reuse a lot of the styling from there on the other sections of the other pages.
+Jag vill få header:n och footer:n gjorda innan jag fortsätter med resten av innehållet och de andra två sidorna eftersom dom används på alla tre sidor. Efter det kommer jag att fokusera på festivalsektionen och recensions-delen av hemsidan eftersom de är ganska enkla och jag tror att jag skulle kunna återanvända mycket av stylingen därifrån på de andra sektionerna på de andra sidorna.
 
-Note to self:
-Finish one task/thought before switching to fixing or implementing a new idea.
+Anteckning till mig själv:
+Avsluta en uppgift/tanke innan du går över till att fixa eller implementera en ny idé.
 
-## Friday:
+## Fredag:
 
 TODO:
 
@@ -85,14 +85,14 @@ TODO:
     - [ ] CSS
       - [ ] Layout Flex/Grid?
 
-### End of day thoughts:
+### Reflektion slutet av dagen:
 
-Having problems with justifying logo to the left in header. When added as a list item it don't behave as I want to.
+Har problem med att placera logotypen till vänster i header:n. När jag använder mig av en lista för menyalternativen fungerar det inte som jag vill.
 
-Kind of like the way the navbar looks now. Just needs some small changes.
-Will focus on getting the footer now.
+Gillar typ hur navbaren/headern ser ut nu. Behöver bara några små förändringar.
+Ska fokusera på att få footern nu.
 
-## Sunday/Monday:
+## Söndag/Måndag:
 
 TODO:
 
@@ -117,27 +117,66 @@ TODO:
     - [x] CSS
       - [x] Layout Flex/Grid?
 
-### End of day thoughts:
+### Reflektion slutet av dagen:
 
-Managed to get a nice looking footer using flex. Have some trouble getting stuff aligned in center but I'll come back to that later.
+Lyckades få till en snygg sidfot med flex. Har lite problem med att få saker i mitten men jag återkommer till det senare.
 
-Now all the pages have their basic structure and styling. Next step is to implement better CSS for responsiveness. I initially thought I only need flexbox for this but I might try to switch things to grid to have more control over the layout for different devices.
+Nu har alla sidor sin grundstruktur och styling. Nästa steg är att implementera bättre CSS för responsivitet. Jag trodde först att jag bara behöver flexbox för detta men jag kanske försöker byta ut allt till grids för att ha mer kontroll över layouten för olika enheter.
 
-I'll probably just start to implement grid at the contact page for the contact form and then apply it for the rest of the webpages.
+Jag kommer förmodligen bara att börja implementera rutnät på kontaktsidan för kontaktformuläret och sedan försöka implementera det på resten av webbsidorna.
 
-## Tuesday:
+## Tisdag:
 
-Plans for day:
+Planer för dagen:
 
-Pick up on last days work and finish the contact form. I want to use grids for the contact form layout. If that goes as planned I'll want to implement grids for the rest of the websites layout since it feels like it'll be easier to control when testing for smaller screens and different media queries.
+Fortsätta på gårdagens arbete med kontaktformuläret. Jag vill använda grids för kontaktformulärets layout. Om det går som planerat kommer jag att vilja implementera grids för resten av sidornas layout eftersom det känns som att det blir lättare att kontrollera när man testar för mindre skärmar och olika media queries.
 
-I also want to make the code cleaner. I've started to organize the style.css for better readability, although it feels that I could make both HTML and CSS cleaner with fewer classes.
+Jag vill också göra koden renare. Jag har börjat organisera style.css för bättre läsbarhet, och det känns som att jag skulle kunna göra både HTML och CSS renare med färre klasser.
 
-### Update:
+### Uppdatering
 
-Managed to write a contact form by using grid for layout.
-I've noticed that when changing viewport size the flex I've set up is kind of broken for all parts of the webpage so I'll branch of and try to refractor all the flex into a grid system and while working on that clean up both HTML and CSS which is a horrible mess right now.
+Lyckades skriva ett kontaktformulär genom att använda grids för layout.
+Jag har märkt att när jag ändrar skärmstorlek är flexboxarna jag satt upp trasig för alla delar av sidan så jag kommer att skapa en branch och försöka göra all flex till grid och samtidigt städa upp både HTML och CSS vilket är en hemsk röra just nu.
 
-Whish me luck!
+Önska mig lycka till!
 
-### End of day thoughts:
+### Reflektion slutet av dagen:
+
+....
+
+## Fredag, inlämningsdag 17:16:
+
+### Well...
+
+Avsaknaden av inlägg här i journalen kanske talar för sig...
+Jag satte igång med att implementera grids på de andra sidorna. Det gick till en början bra och jag kände att "det här går nog vägen".
+
+Någon gång där på tisdag natt hade jag trasslat in mig ordentligt i en salig blandning av grids och flex och gav upp då jag knappt visste vad som hörde till vad.
+
+Som tur var hade jag ju gjort allt det här i en separat branch! På onsdagen kunde jag gå tillbaka till min main-branch och fortsätta där jag saker och ting ändå såg och funkade hyfsat. Jag skapade ett nytt "experiment"-projekt där jag försökte återskapa min layout och mina olika delar av sidan med grids fast enbart med div:ar i olika färger och text. Något jag faktiskt fick att funka som jag ville!
+När jag väl gick tillbaka till det riktiga projektet och försökte implementera samma metoder där så började grejer spöka på riktigt.
+
+Resten av onsdags-kvällen/natten gick åt att felsöka försöka förstå varför det inte ville fungera utan några större framgångar.
+
+Torsdagen bestod av ungefär samma sak fast med allt mer stigande kortisol-värden. Tack och lov kunde jag få lite input från kursledaren mot slutet av dagen vilket fick det att lossna för mig!
+
+Idag fredag har jag lugn och metodiskt gått genom varje del av sidan och verkligen testat och gjort färdigt saker innan jag går vidare till nästa.
+
+Det jag kommit fram till såhär vid dagens slut är att jag måste bli bättre på att börja enkelt först och främst.
+
+Att i början bygga upp sidan med div:ar eller "primitiva" objekt och testa varje del noggrant innan jag går på nästa. Detta gjorde jag visserligen när jag började projektet dock så blev jag lite för varm i kläderna för mitt eget bästa och bakade in mig själv i en satans massa div:ar och klasser.
+Jag försökte implementera grids när jag inte helt hade förstått mig på det. Samt att jag försökte baka in för mycket i en och samma "sektion" för att jag tänkte att allt i den skulle kunna kontrolleras samtidigt och automatiskt (något som säkert går men inte med den lilla kunskap jag besitter).
+
+När jag satt idag delade jag upp saker och ting i lite mindre delar som hör till varandra vilket gjorde det lättare att välja ut och manipulera.
+
+Något jag skulle vilja göra bättre men som jag inte riktigt känner att jag har hundra koll på är att skapa mer "generiska" css-klasser som fungerar på många sidor. Jag förstår det till viss del men ibland känns det som att jag inte riktigt når fram. Det känns som att css-filen blir så otroligt lång och rörig. Det måste jag bli bättre på!
+
+Något annat jag måste bli bättre på är att göra bättre commits. Dels att skriva bättre meddelanden men också att göra commits som är bra, alltså inte commit:a grejer som är ofärdigt.
+Jag tror anledningen till att det blir "hipp-som-happ"-commits är för att jag hoppar och jobbar på flera saker samtidigt, efter ett tag minns man inte vad man ändrat och då är det svårt att redogöra för det i ett commit.
+
+Sammanfattningsvis kan jag väl säga att sidan ser ju inte helt ut som jag tänkt mig och den fungerar inte helt som jag vill. Dock är jag nöjd med den för att vara min "första" hemsida. Till nästa gång ska jag till en början inte lägga så mycket fokus på utseende utan på funktion för att sen börja styla samt att kanske inte försöka göra saker för avancerade utifrån min egna kunskap.
+Jag har dock lärt mig väldigt mycket av det här projektet och jag har faktiskt haft väldigt roligt, sådär så att jag inte velat sluta (alltså när jag inte varit helt förtvivlad över att något inte fungerat).
+
+Verkligen ett kul och lärorikt projekt!!
+
+Tack för mig, leverpastej!
