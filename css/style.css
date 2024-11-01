@@ -323,6 +323,41 @@ input[type="email"] {
   border: 1px solid black;
   border-radius: 8px;
 }
+input[type="text"] {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 1rem;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+input[type="tel"] {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 1rem;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+input[type="date"] {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 1rem;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+textarea {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-inline: 1rem;
+  color: grey;
+  border: 1px solid black;
+  border-radius: 8px;
+}
 
 button {
   cursor: pointer;
@@ -335,6 +370,7 @@ button {
   background-color: rgb(238, 62, 18);
   box-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
+
 /* === Components buttons, fields etc. end === */
 
 /* === Media queries === */
